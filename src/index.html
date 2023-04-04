@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/head.html', {
+        "title":"Главная"
+    })
+<body>
+    @@include('html/header.html')
+
+    <section class="second-block">
+        <div class="container">
+            <h1 class="second-block__title">
+                Наша компания предоставляет
+            </h1>
+        </div>
+        <p class="important">Аудио и видео решения для вашего бизнеса, несмотря на трудности, мы всегда можем выполнить ваш заказ</p>
+        <a href="#read-more"> 
+        <button class="second-block__button">
+          Узнать подробнее
+        </button>  </a>
+    </section>
+ 
+    <div class="image-block" id="read-more">
+        <a href="/zal.html" class="image-items" style="background-image:url(@img/main_zal.jpg)">
+            <div class="text">
+              <span>Конференц-зал</span>
+            </div>
+        </a>
+        <a href="/smart-home.html" class="image-items" style="background-image:url(@img/main_umnyj-dom.jpg)">
+            <div class="text">
+              <span>Умный дом</span>
+            </div>
+        </a>
+        <a href="/negotiation-rooms.html" class="image-items" style="background-image:url(@img/main_otrasl.jpg)">
+            <div class="text">
+              <span>Переговорные комнаты</span>
+            </div>
+        </a>
+        <a href="/karaoke.html" class="image-items" style="background-image:url(@img/main_karaoke.jpg)">
+            <div class="text">
+              <span>Караоке</span>
+            </div>
+        </a>
+        <a href="/complexes.html" class="image-items" style="background-image:url(@img/main_home.jpg)">
+            <div class="text">
+              <span>Гостиничные и ресторанные комплексы</span>
+            </div>
+        </a>
+        <a href="/home-cinema.html" class="image-items" style="background-image:url(@img/main_kino.jpg)">
+            <div class="text">
+              <span>Домашние кинотеатры</span>
+            </div>
+        </a>
+        <a href="/museums.html" class="image-items" style="background-image:url(@img/main_museums.jpg)">
+            <div class="text">
+              <span>Музеи</span>
+            </div>
+        </a>
+        <a href="/office.html" class="image-items" style="background-image:url(@img/main_office.jpeg)">
+            <div class="text">
+              <span>Офисные коммуникации</span>
+            </div>
+        </a>
+        <a href="/multirum.html" class="image-items" style="background-image:url(@img/main_multi.jpg)">
+            <div class="text">
+              <span>Мультирум</span>
+            </div>
+        </a>
+    
+    </div>
+
+    <div class="about-block">
+        <div class="about-text">
+            <p class="text-company">
+                Наша компания предоставляет широкий спектр ИТ-услуг и внедряет  новые подходы для решения задач вашего бизнеса
+            </p>
+        </div>
+        <div class="about_company">
+            <div class="about-item">
+                <div class="img">
+                    <img alt="" src="@img/klient.png">
+                </div>
+                <div class="about-item__title">
+                    <p>
+                        Клиентоориентированность
+                    </p>
+                </div>
+                <div class="about-item__subtitle">
+                    <p>
+                        В процессе работы с клиентами мы используем индивидуальный подход, благодаря которому на выходе получаем уникальное предложение по привлекательной цене.
+                    </p>
+                </div>
+            </div>
+            <div class="about-item">
+                <div class="img">
+                    <img alt="" src="@img/specialists.png">
+                </div>
+                <div class="about-item__title">
+                    <p>
+                        Квалифицированные специалисты
+                    </p>
+                </div>
+                <div class="about-item__subtitle">
+                    <p>
+                        Опытные специалисты проходят строгий отбор и ежегодно участвуют на курсах повышения квалификации в нашей компании.
+                    </p>
+                </div>
+            </div>
+            <div class="about-item">
+                <div class="img">
+                    <img alt="" src="@img/quality.png">
+                </div>
+                <div class="about-item__title">
+                    <p>
+                        Высокое качество работы
+                    </p>
+                </div>
+                <div class="about-item__subtitle">
+                    <p>
+                        Доверие к нам со стороны клиентов очень большое. Мы постоянно контролируем качество нашей продукции и услуг.
+                    </p>
+                </div>
+            </div>
+            <div class="about-item">
+                <div class="img">
+                    <img alt="" src="@img/Consulting.png">
+                </div>
+                <div class="about-item__title">
+                    <p>
+                        Консалтинг и проектирование
+                    </p>
+                </div>
+                <div class="about-item__subtitle">
+                    <p>
+                        Оказание консультаций клиентам в процессе проекта, обучения и послепроектного сопровождения.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('html/footer.html')
+</body>
+</html>

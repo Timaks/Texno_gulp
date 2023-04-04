@@ -1,0 +1,30 @@
+.block-customers{
+    margin-top: 110px;
+    margin-bottom: 30px;
+}
+.partners-description {
+    padding-bottom: 30px;
+  }
+.partners-description h1{
+    font-size: 32px;
+}
+.partners-brands{
+    display: flex;
+    gap: 20px;
+    flex-flow: row wrap;
+}
+.partners-brands--item{
+    flex: 0 0 18%; 
+    width: 250px;
+}
+
+@media (max-width: 550px) {
+    .partners-brands--item{
+        width: 350px;
+    }  
+}
+@media (max-width: 450px) {
+    .partners-description h1{
+        font-size: 24px;
+    }  
+}

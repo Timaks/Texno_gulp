@@ -1,0 +1,105 @@
+.side-menu {
+    display: none;
+}    
+@media screen and (min-width: 768px) {    
+    .side-menu *    {
+        box-sizing: border-box;
+    }            
+    .side-menu     {
+        position: fixed;
+        display: block;
+        top: 200px;
+        right: 0;
+        z-index: 9999999;
+    }        
+    .side-menu-buttons {
+        position: absolute;
+        top: 0; 
+        right: -2px;
+        border: 2px solid #BFE2FF;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        box-shadow: 0 4px 4px rgba(0,0,0,0.2), 0 10px 18px rgba(0,0,0,0.2);
+    }
+    .side-menu-item:first-child {
+        border-top-left-radius: 10px;
+    }
+    .side-menu-item:last-child {
+        border-bottom-left-radius: 10px;
+    }
+    .side-menu-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        width: 55px;
+        height: 50px;
+        position: relative;
+        background-color: #fff;
+    }
+    .side-menu-item:not(:last-child) {
+        border-bottom: 2px solid #BFE2FF;
+    }
+    .side-menu-item i,
+    .side-menu-item span {
+        font-size: 40px;
+        color: #000;
+        transition: color 0.3s;
+    }
+    .side-menu-item img {
+        height: 40px;
+    }
+    .side-menu-item svg {
+        stroke: #000;
+        height: 40px;
+        stroke-miterlimit: 10;
+        stroke-dasharray: 400;    
+        stroke-width: 2;
+        stroke-linecap: round; 
+        stroke-linejoin: round;
+        fill: none;
+        transition: stroke 0.3s;
+    }
+    .side-menu-item:hover i,
+    .side-menu-item:hover span {
+        color: #337AB7;
+    }
+    .side-menu-item:hover svg {
+        stroke: #337AB7;
+    }
+    .side-menu-item.svg-icon-anim:hover svg {
+        stroke: #337AB7;
+        animation: strok 1s reverse;  
+    }
+    @keyframes strok {
+        100% {
+            stroke-dashoffset: 400;
+        }
+    }
+    .side-menu-hover {
+        position: absolute;
+        background-color: #337AB7;
+        color: #FFF;
+        border: 2px solid #BFE2FF;
+        padding: 0 30px;
+        transform: translateX(0);
+        left: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 0;
+        transition: all 0.2s;
+        z-index: -100;
+        font-size: 16px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .side-menu-item:hover .side-menu-hover {
+        opacity: 1;
+        transform: translateX(-100%);
+    }    
+}
+   
