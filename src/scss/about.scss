@@ -1,36 +1,36 @@
-.abouts--company{
+.abouts__company{
     margin-top: 100px;
     display: flex;
     margin-bottom: 20px;
     gap: 100px;
 }
-.abouts--company--img{
+.abouts__company--img{
     max-width: 50%;
 }
-.abouts--company--title {
+.abouts__company--title {
     font-size: 24px;
 }  
-.abouts--company--text{
+.abouts__company--text{
     font-size: 16px;
     line-height: 22px;
 }
   @media (max-width: 1200px) {
-    .abouts--company{
+    .abouts__company{
         flex-wrap: wrap;
         gap: 10px;
     }
-    .abouts--company--img{
+    .abouts__company--img{
         max-width: 100%;
     }
   }
   @media (max-width: 980px) {
-    .abouts--company--title {
+    .abouts__company--title {
         font-size: 18px;
     }      
-    .abouts--company--text{
+    .abouts__company--text{
         font-size: 14px;
     }
-    .abouts--company--info {
+    .abouts__company--info {
         padding-right: 0px;
     }
   }
