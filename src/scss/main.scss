@@ -122,7 +122,7 @@ p.important {
 
 }
 
-@media(max-width: 380px)
+@media(max-width: 400px)
 {
     .second-block{
         height: 450px;
@@ -133,10 +133,18 @@ p.important {
         padding-top: 30px;
     }
     .second-block__button{
-        margin: 25px;
+        margin-left: 15%;
+        margin-right: 15%;
     }
     p.important {
         padding: 15px;
+    }
+}
+@media(max-width: 365px)
+{
+    .second-block__button{
+        margin-left: 12%;
+        margin-right: 12%;
     }
 }
 @media(max-width: 320px)
