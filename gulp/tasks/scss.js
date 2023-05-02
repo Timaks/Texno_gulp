@@ -16,10 +16,10 @@ export const scss = () => {
                 title: "SCSS",
                 message: "Error: <%= error.message %>"
             })))
-        .pipe(app.plugins.replace(/@img\//g, '../img/'))
         .pipe(sass({
             outputStyle: 'expanded'
         }))
+
 
         .pipe(
             app.plugins.if(
@@ -51,6 +51,7 @@ export const scss = () => {
                 )
             )
 
+        .pipe(app.plugins.replace(/@img\//g, '../img/'))
         // Раскомментировать ниже если нужен не сжатый дубль файла стилей
         .pipe(app.gulp.dest(app.path.build.css))
         .pipe(cleanCss())

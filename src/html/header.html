@@ -19,9 +19,39 @@
                <li>
                    <a href="contact.html">Контакты</a>
                </li>
-
            </ul>
        </nav>
+       <div class="connect">
+        <span class="connection">Связаться с нами</span>
+        <a href="tel:+7(499)110-64-04p3020">
+            <img class="connection__phone" src="/img/telef.png"  alt="">
+        </a>
+        <button class="trigger">
+            <img class="connection__pochta" src="/img/pochta.png"  alt="">
+        </button>
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-button">X</span>
+                <h1 class="form__title">Оставить заявку</h1>
+                <p class="form__subtitle">Заполните форму и наш менеджер свяжется с вами в ближайшее время</p>
+                <form>
+                    <div data-validate="Обязательное поле">
+                        <input class="form__name" type="text" placeholder="Ваше имя">
+                        <label for="name">Имя</label>
+                    </div>
+                    <div data-validate="Обязательное поле">
+                        <input class="form__email" type="text"  placeholder="Ваш телефон или email">
+                        <label for="name">Почта</label>
+                    </div>
+                    <div data-validate="Обязательное поле">
+                        <textarea class="form__message" name="message" placeholder="Ваше сообщение"></textarea>
+                        <label for="name">Ваше сообщение</label>
+                    </div>
+                    <button class="form__btn" id="submit-at">Отправить</button>
+                </form>
+            </div>
+        </div>
+       </div>
       <div class="burger">
         <span></span>
       </div>

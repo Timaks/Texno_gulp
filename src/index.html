@@ -6,17 +6,40 @@
 <body>
     @@include('html/header.html')
 
-    <section class="second-block" style="background: url(@img/main_image.jpg) no-repeat; background-size: cover">
+    <section class="second-block">
         <div class="container second-block__content">
             <h1 class="second-block__title">
-                Наша компания предоставляет
+                «Росси» - ваш надежный партнер в мире технологий
             </h1>
         </div>
-        <p class="important">Аудио и видео решения для вашего бизнеса, несмотря на трудности, мы всегда можем выполнить ваш заказ</p>
-        <a href="#read-more"> 
-        <button class="second-block__button">
-          Узнать подробнее
-        </button>  </a>
+            <p class="important">Команда профессионалов готова предложить индивидуальные решения для дома и бизнеса, которые подойдут именно вам</p>
+        <button class="second-block__button trigger">
+          Заполнить заявку
+        </button>
+        <div class="modal">
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close-button">X</span>
+                    <h1 class="form__title">Оставить заявку</h1>
+                    <p class="form__subtitle">Заполните форму и наш менеджер свяжется с вами в ближайшее время</p>
+                    <form>
+                        <div data-validate="Обязательное поле">
+                            <input class="form__name" type="text" placeholder="Ваше имя">
+                            <label for="name">Имя</label>
+                        </div>
+                        <div data-validate="Обязательное поле">
+                            <input class="form__email" type="text"  placeholder="Ваш телефон или email">
+                            <label for="name">Почта</label>
+                        </div>
+                        <div data-validate="Обязательное поле">
+                            <textarea class="form__message" name="message" placeholder="Ваше сообщение"></textarea>
+                            <label for="name">Ваше сообщение</label>
+                        </div>
+                        <button class="form__btn" id="submit-at">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
  
     <div class="image-block" id="read-more">

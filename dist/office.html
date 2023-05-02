@@ -8,7 +8,10 @@
     <meta name="description" content="Компания ЗАО «РОССИ» предлагает инновационные решения для оснащения современного офиса, переговорных комнат, музеев, гостиниц и домов. Специалисты нашей компании предлагают полный пакет услуг по созданию и оформлению технической документации, включающей в себя инженерные, монтажные и дизайнерские решения."/>
     <meta name="robots" content="index, follow"/>
     <link rel="icon" href="../img/logotip.png">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230417105002">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <title>Офисные интеграции</title>
 </head>
 
@@ -17,7 +20,7 @@
     <div class="header__content container">
         <div class="header__logo">
             <a href="/index.html" class="logo">
-               <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Лого"></picture>
+               <img src="img/logo.png" alt="Лого">
            </a>
         </div>
        <nav class="header__navigation">
@@ -34,68 +37,98 @@
                <li>
                    <a href="contact.html">Контакты</a>
                </li>
-
            </ul>
        </nav>
+       <div class="connect">
+        <span class="connection">Связаться с нами</span>
+        <a href="tel:+7(499)110-64-04p3020">
+            <img class="connection__phone" src="/img/telef.png"  alt="">
+        </a>
+        <button class="trigger">
+            <img class="connection__pochta" src="/img/pochta.png"  alt="">
+        </button>
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-button">X</span>
+                <h1 class="form__title">Оставить заявку</h1>
+                <p class="form__subtitle">Заполните форму и наш менеджер свяжется с вами в ближайшее время</p>
+                <form>
+                    <div data-validate="Обязательное поле">
+                        <input class="form__name" type="text" placeholder="Ваше имя">
+                        <label for="name">Имя</label>
+                    </div>
+                    <div data-validate="Обязательное поле">
+                        <input class="form__email" type="text"  placeholder="Ваш телефон или email">
+                        <label for="name">Почта</label>
+                    </div>
+                    <div data-validate="Обязательное поле">
+                        <textarea class="form__message" name="message" placeholder="Ваше сообщение"></textarea>
+                        <label for="name">Ваше сообщение</label>
+                    </div>
+                    <button class="form__btn" id="submit-at">Отправить</button>
+                </form>
+            </div>
+        </div>
+       </div>
       <div class="burger">
         <span></span>
       </div>
     </div>    
 </header>
-<script src="/js/app.min.js?_v=20230417105002"></script>
+<script src="/js/app.min.js"></script>
 
     <div class="side-menu">
     <div class="side-menu-buttons"> 
         <a href="/zal.html" class="side-menu-item">
             <div class="side-menu-item-icon">
-                <picture><source srcset="img/zal.webp" type="image/webp"><img src="img/zal.png" alt=""></picture>
+                <img src="img/zal.png" alt="">
             </div>
             <div class="side-menu-hover">Конференц-зал</div>
         </a> 
         <a href="/smart-home.html" class="side-menu-item">
             <div class="side-menu-item-icon">
-                <picture><source srcset="img/Smart-House.webp" type="image/webp"><img src="img/Smart-House.png" /></picture>
+                <img src="img/Smart-House.png" />
             </div>
             <div class="side-menu-hover">Умный дом</div>
         </a> 
         <a href="/negotiation-rooms.html" class="side-menu-item svg-icon-anim">
             <div class="side-menu-item-icon">
-                <picture><source srcset="img/rooms.webp" type="image/webp"><img src="img/rooms.png" alt=""></picture>            </div>
+                <img src="img/rooms.png" alt="">            </div>
             <div class="side-menu-hover">Переговорные комнаты</div>
         </a> 
         <a href="/karaoke.html" class="side-menu-item">
             <div class="side-menu-item-icon">
-                <picture><source srcset="img/karaoke.webp" type="image/webp"><img src="img/karaoke.png" alt=""></picture>
+                <img src="img/karaoke.png" alt="">
             </div>
             <div class="side-menu-hover">Караоке</div>
         </a> 
         <a href="/complexes.html" class="side-menu-item">
             <div class="side-menu-item-icon">
-                <picture><source srcset="img/hotel.webp" type="image/webp"><img src="img/hotel.png" /></picture>
+                <img src="img/hotel.png" />
             </div>
             <div class="side-menu-hover">Гостиничные и ресторанные комплексы</div>
         </a> 
         <a href="/home-cinema.html" class="side-menu-item">
             <div class="side-menu-item-icon">
-                <picture><source srcset="img/Cinema.webp" type="image/webp"><img src="img/Cinema.png" /></picture>
+                <img src="img/Cinema.png" />
             </div>
             <div class="side-menu-hover">Домашние кинотеатры</div>
         </a> 
         <a href="/museums.html" class="side-menu-item">
             <div class="side-menu-item-icon">
-                <picture><source srcset="img/museums.webp" type="image/webp"><img src="img/museums.png" /></picture>
+                <img src="img/museums.png" />
             </div>
             <div class="side-menu-hover">Музеи</div>
         </a> 
         <a href="/office.html" class="side-menu-item">
             <div class="side-menu-item-icon">
-                <picture><source srcset="img/office.webp" type="image/webp"><img src="img/office.png" /></picture>
+                <img src="img/office.png" />
             </div>
             <div class="side-menu-hover">Офисные интеграции</div>
         </a>  
         <a href="/multirum.html" class="side-menu-item">
             <div class="side-menu-item-icon">
-                <picture><source srcset="img/Multirum.webp" type="image/webp"><img src="img/Multirum.png" /></picture>
+                <img src="img/Multirum.png" />
             </div>
             <div class="side-menu-hover">Мультирум</div>
         </a> 
@@ -105,7 +138,7 @@
 <section class="block-industry container">
     <div class="industry">
         <div class="industry-left">
-            <picture><source srcset="img/office-left.webp" type="image/webp"><img class="industry-img" src="img/office-left.jpg" alt=""></picture>
+            <img class="industry-img" src="img/office-left.jpg" alt="">
         </div>
         <div class="industry-right">
             <h1 class="industry_text-title">Офисные интеграции</h1>
@@ -113,7 +146,7 @@
             <p class="industry_text-subtitle-rossi">Компания ЗАО «РОССИ»  предлагает инновационные решения для оснащения современного офиса, созданные на основе отечественных и зарубежных технических достижений. Для создания мультимедийных комплексов используется аппаратура от надежных японских, американских, европейских и российских производителей, успевших доказать качество и эффективность работы технических решений.</p>
         </div>
         <div class="industry-left">
-            <picture><source srcset="img/office-rigth.webp" type="image/webp"><img class="industry-img" src="img/office-rigth.jpg" alt=""></picture>
+            <img class="industry-img" src="img/office-rigth.jpg" alt="">
         </div>
 
     </div>
@@ -125,7 +158,7 @@
         <div class="technologies-second">
             <div class="technologies__container">
                 <div class="technologies-image">
-                    <picture><source srcset="img/office_Video-walls.webp" type="image/webp"><img class="technologies-img" src="img/office_Video-walls.jpg" alt=""></picture>
+                    <img class="technologies-img" src="img/office_Video-walls.jpg" alt="">
                 </div>
                 <div class="technologies__content">
                     <h1>Видеостены</h1>
@@ -138,7 +171,7 @@
         <div class="technologies-second">
             <div class="technologies__container">
                 <div class="technologies-image">
-                    <picture><source srcset="img/office_Projectors.webp" type="image/webp"><img class="technologies-img" src="img/office_Projectors.jpg" alt=""></picture>
+                    <img class="technologies-img" src="img/office_Projectors.jpg" alt="">
                 </div>
                 <div class="technologies__content">
                     <h1>Проекторы</h1>
@@ -150,7 +183,7 @@
         <div class="technologies-second">
             <div class="technologies__container">
                 <div class="technologies-image">
-                    <picture><source srcset="img/office_Interactive-panel.webp" type="image/webp"><img class="technologies-img" src="img/office_Interactive-panel.jpg" alt=""></picture>
+                    <img class="technologies-img" src="img/office_Interactive-panel.jpg" alt="">
                 </div> 
                 <div class="technologies__content">
                     <h1>Интерактивные панели</h1>
@@ -163,7 +196,7 @@
         <div class="technologies-second">
             <div class="technologies__container">
                 <div class="technologies-image">
-                    <picture><source srcset="img/office_Background-dedication.webp" type="image/webp"><img class="technologies-img" src="img/office_Background-dedication.jpg" alt=""></picture>
+                    <img class="technologies-img" src="img/office_Background-dedication.jpg" alt="">
                 </div>
                 <div class="technologies__content">
                     <h1>Система фонового озвучивания</h1>
@@ -177,7 +210,7 @@
         <div class="technologies-second">
             <div class="technologies__container">
                 <div class="technologies-image">
-                    <picture><source srcset="img/office_camera.webp" type="image/webp"><img class="technologies-img" src="img/office_camera.jpg" alt=""></picture>
+                    <img class="technologies-img" src="img/office_camera.jpg" alt="">
                 </div>
                 <div class="technologies__content">
                     <h1>Видеонаблюдение</h1>
@@ -189,7 +222,7 @@
         <div class="technologies-second">
             <div class="technologies__container">
                 <div class="technologies-image">
-                    <picture><source srcset="img/office_Safety.webp" type="image/webp"><img class="technologies-img" src="img/office_Safety.jpg" alt=""></picture>
+                    <img class="technologies-img" src="img/office_Safety.jpg" alt="">
                 </div> 
                 <div class="technologies__content">
                     <h1>Безопасность</h1>
@@ -213,7 +246,7 @@
             </div>
                
             <div class="equipment-image">
-                <picture><source srcset="img/office-info.webp" type="image/webp"><img class="equipment__img" src="img/office-info.jpg" alt=""></picture>
+                <img class="equipment__img" src="img/office-info.jpg" alt="">
             </div>
         </div>
        
@@ -225,7 +258,7 @@
         <div class="footer_contact">
             <div class="contact_item">
                 <span class="cnt-item">Телефон:</span>
-                <a href="tel:+7(499)110-64-04">+7 (499) 110-64-04 доб. 3010</a>
+                <a href="tel:+7(499)110-64-04p3020">+7 (499) 110-64-04 доб. 3020</a>
             </div>
             <div class="contact_item">
                 <span class="cnt-item">Email:</span>

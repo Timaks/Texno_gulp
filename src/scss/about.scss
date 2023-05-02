@@ -8,11 +8,13 @@
     max-width: 50%;
 }
 .abouts__company--title {
-    font-size: 24px;
+    font-size: 34px;
+    padding: 10px;
 }  
 .abouts__company--text{
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 22px;
+    line-height: 30px;
+    padding: 10px;
 }
   @media (max-width: 1200px) {
     .abouts__company{

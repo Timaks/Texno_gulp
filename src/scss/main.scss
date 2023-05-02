@@ -1,17 +1,20 @@
 .second-block{
     height: 900px;
     margin-top: 55px;
+    background-image: linear-gradient(to top,rgba(10, 6, 53, 0.3),rgba(65, 5, 105, 0.15)),url(/img/main_image.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .second-block__content{
-    max-width: 700px;
+    max-width: 900px;
     margin-left: 30px;
     padding: 70px;
 }
 
 h1.second-block__title {
-    font-family: 'OpenSans', Sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #fff;
-    font-size: 75px;
+    font-size: 70px;
     font-weight: 700;
     padding-top: 50px;
     text-shadow: 1px 2px 15px #000;
@@ -26,31 +29,33 @@ h1.second-block__title {
 p.important {
     background-color: #1d1954;
     color: #fff;
-    padding: 50px 70px; 
+    padding: 25px 70px;
     font-size: 26px;
-    text-align: center;
+    text-align: right;
     opacity: 0.9;
     max-width: 50%;
+    background-color: #1a173e;
 }
 
 .second-block__button{
-    font-family: 'OpenSans', Sans-serif;
-    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
     padding: 18px;
     font-size: 20px;
     font-weight: 500;
-    margin-top: 20px;
+    margin-top: 80px;
     letter-spacing: 5px;
-    background-color: #1d1954;
+    background-color: #ffffff;
     margin-left: 85px;
     border-radius: 3%;
-    border-color: #7d73ff;
     cursor: pointer;
     opacity: 0.9;
+    border: none;
+    text-transform: uppercase;
 }
 .second-block__button:hover{
-    background-color: transparent;
-    color: #7d73ff;
+    background-color: #1a173e;
+    color: #fff;
 }
 
 
