@@ -4,19 +4,37 @@
         "title":"Росси-техно"
     })
 <body>
-    @@include('html/header.html')
-
-    <section class="second-block">
-        <div class="container second-block__content">
-            <h1 class="second-block__title">
-                «Росси» - ваш надежный партнер в мире технологий
-            </h1>
-        </div>
-            <p class="important">Команда профессионалов готова предложить индивидуальные решения для дома и бизнеса, которые подойдут именно вам</p>
-        <button class="second-block__button trigger">
-          Заполнить заявку
-        </button>
-        <div class="modal">
+    <header class="header">
+        <div class="header__content container">
+            <div class="header__logo">
+                <a href="/index.html" class="logo">
+                   <img src="@img/logo.png" alt="Лого">
+               </a>
+            </div>
+           <nav class="header__navigation">
+               <ul>
+                    <li>
+                        <a href="index.html">Главная</a>
+                    </li>
+                   <li>
+                       <a href="about.html">О нас</a>
+                   </li>
+                   <li>
+                       <a href="customers.html">Заказчики</a>
+                   </li>
+                   <li>
+                       <a href="contact.html">Контакты</a>
+                   </li>
+               </ul>
+           </nav>
+           <div class="connect">
+            <span class="connection">Связаться с нами</span>
+            <a href="tel:+7(499)110-64-04p3020">
+                <img class="connection__phone" src="/img/telef.png"  alt="">
+            </a>
+            <button class="trigger">
+                <img class="connection__pochta" src="/img/pochta.png"  alt="">
+            </button>
             <div class="modal">
                 <div class="modal-content">
                     <span class="close-button">X</span>
@@ -39,7 +57,24 @@
                     </form>
                 </div>
             </div>
+           </div>
+          <div class="burger">
+            <span></span>
+          </div>
+        </div>    
+    </header>
+
+
+    <section class="second-block">
+        <div class="container second-block__content">
+            <h1 class="second-block__title">
+                «Росси» - ваш надежный партнер в мире технологий
+            </h1>
         </div>
+            <p class="important">Команда профессионалов готова предложить индивидуальные решения для дома и бизнеса, которые подойдут именно вам</p>
+        <button class="trigger second-block__button">
+          Заполнить заявку
+        </button>
     </section>
  
     <div class="image-block" id="read-more">
@@ -161,5 +196,6 @@
         </div>
     </div>
     @@include('html/footer.html')
+    <script src="/js/app.min.js"></script>
 </body>
 </html>

@@ -12,10 +12,9 @@ const swiper = new Swiper();
         document.querySelector('.header__navigation').classList.toggle('open');
     })
 //модальное окно
-    var modal = document.querySelector(".modal");
-    var trigger = document.getElementsByClassName('trigger');
-    //var trigger = document.querySelectorAll(".trigger");
-    var closeButton = document.querySelector(".close-button");
+    let modal = document.querySelector(".modal");
+    let trigger = document.getElementsByClassName('trigger');
+    let closeButton = document.querySelector(".close-button");
 
     function toggleModal() {
         modal.classList.toggle("show-modal");
@@ -27,12 +26,12 @@ const swiper = new Swiper();
         }
     }
 
-    for (var i = 0; i < trigger.length; i++) {
-        console.log(trigger);
+    
+    for (let i = 0; i < trigger.length; i++) {
         trigger[i].addEventListener('click', function() {
+            console.log(trigger);
             toggleModal();
         })
     };
-    //trigger.addEventListener("click", toggleModal);
     closeButton.addEventListener("click", toggleModal);
     window.addEventListener("click", windowOnClick);

@@ -64,6 +64,7 @@ p.important {
 {
     .second-block{
         height: 800px;
+        background-image: linear-gradient(to top,rgba(10, 6, 53, 0.3),rgba(65, 5, 105, 0.15)),url(/img/main_image1200.jpg);
     }
     h1.second-block__title {
         padding: 10px;
@@ -71,6 +72,9 @@ p.important {
     }
     .second-block .container {
         max-width: 700px;
+    }
+    p.important{
+        max-width: 60%;
     }
 }
 @media(max-width: 991px)
@@ -95,15 +99,19 @@ p.important {
         font-weight: 400;
     }
     p.important {
-        padding: 40px;
+        padding: 20px;
         max-width: 100%;
       }
-
+      .modal-content {
+        width: 50%;
+      }
+    
 }
 @media(max-width: 767px)
 {
     .second-block{
         height: 555px;
+        background-image: linear-gradient(to top,rgba(10, 6, 53, 0.3),rgba(65, 5, 105, 0.15)),url(/img/main_image768.jpg);
     }
     p.important {
         padding: 24px;
@@ -121,9 +129,6 @@ p.important {
     .second-block .container{
         margin-left: 0;
     }
-    .second-block__button{
-        text-shadow: 1px 5px 6px #000;
-    }
 
 }
 
@@ -131,6 +136,7 @@ p.important {
 {
     .second-block{
         height: 450px;
+        background-image: linear-gradient(to top,rgba(10, 6, 53, 0.3),rgba(65, 5, 105, 0.15)),url(/img/main_image400.jpg);
     }
     h1.second-block__title {
         font-size: 30px;
